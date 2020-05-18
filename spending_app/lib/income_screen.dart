@@ -1,3 +1,4 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -17,10 +18,13 @@ class _IncomeScreen extends State<IncomeScreen>{
   List<String> _categories = ['Salary', 'Other'];
   String _selectedCategory;
   DateTime _selectedDate;
+  AudioCache _audioCache;
+  final player = AudioCache();
 
   @override
   void initState() {
     super.initState();
+    _audioCache = AudioCache(prefix: "audio/");
   }
 
   Future<List> _submitData() async {
@@ -118,8 +122,8 @@ class _IncomeScreen extends State<IncomeScreen>{
                 ),
               ),
               RaisedButton(
+                onPressed:() {_submitData(); _audioCache.play('score.mp3');},
                 child: Text('Save'),
-                onPressed: _submitData,
               ),
             ],
           ),
