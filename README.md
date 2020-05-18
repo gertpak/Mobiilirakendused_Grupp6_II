@@ -12,9 +12,9 @@ Rando Aljaste
 Spending App on mugav app, millega saad kiirelt ja lihtsalt ülevaate oma igapäevastest sissetulekutest ja väljaminekutest.  Appis on näha kulu, tulu ja balansi. Andmeid saab sisestada kuupäevaga.
 
 # Platform
-Android Native
+Android Studio
 
-# Tarkvara nõuded
+# Tarkvara nõuded ja pluginid
 Flutter 
 Android
 * Android Studio viimane versioon
@@ -24,6 +24,21 @@ Android
 * Build Tools 29.0.3 (viimane mitte rc versioon)
 * Android SDK Platform-Tools (viimane versioon (30.0.0))
 * Android SDK Tools (26.1.1))
+* HAXM installer v7.5.6
+* Dart-SDK v2.8.2
+
+# Arenduskeskkonna ülesseadmine:
+* Paigaldada Android Studio.
+* Paigaldada kõik pluginid, mis varem kirjeldatud.
+* Teha Android Studio refreshi.
+* Paigaldada ja seadistada vajalik emulaator.
+* Teha git clone meie projektist.
+* Avada spending_app kaust Android Studios.
+* Teha build Flutter ja Run main.dart
+* Nüüd rakendus saab käivitada emulaatoriga.
+
+NB:
+Kui paigaldamise ajal tuleb viga: VT-x is disabled in the bios. Siis peate aktiveerima virtualization technology in Teie BIOS.
 
 # Pildid
 
