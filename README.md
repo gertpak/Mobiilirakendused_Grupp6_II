@@ -12,8 +12,7 @@ Rando Aljaste
 Spending App on mugav app, millega saad kiirelt ja lihtsalt ülevaate oma igapäevastest sissetulekutest ja väljaminekutest.  Appis on näha kulu, tulu ja balansi. Andmeid saab sisestada kuupäevaga.
 
 # Platform
-Android Native
-
+Flutter
 # Tarkvara nõuded ja pluginid
 Flutter 
 Android
